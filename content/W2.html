@@ -1,0 +1,478 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSTemplate</title>
+        <meta charset="utf-8">
+<meta property="head" content="H1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 -->
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container-fluid'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>cd2022_bg2</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">cd2022_bg2</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li><a href='W2.html'>W2</a><li class='has-children'><a href='W11.html'>W11</a><ul class='dropdown'><li><a href='w11s1.html'>w11s1</a><li><a href='w11s2.html'>w11s2</a><li><a href='w11s3.html'>w11s3</a><li><a href='w11s4.html'>w11s4</a></li></ul><li><a href='Menbers.html'>Menbers</a><li class='has-children'><a href='協同簡報.html'>協同簡報</a><ul class='dropdown'><li class='has-children'><a href='組員.html'>組員</a><ul class='dropdown'><li><a href='40923203.html'>40923203</a><li><a href='40923204.html'>40923204</a><li><a href='40923207-1.html'>40923207-1</a><li><a href='40923207-2.html'>40923207-2</a><li><a href='40923240.html'>40923240</a><li><a href='40923209.html'>40923209</a><li><a href='40923213.html'>40923213</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">About << <a href='About.html'>Previous</a> <a href='W11.html'>Next</a> >> W11<br /><h1>W2</h1>
+<p>student_web_page</p>
+<p><a 2b_student="" style="width: 422px;" table="" web_page=""> </a></p>
+<table style="width: 422px;">
+<tbody>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;"><span style="background-color: #ff6600;">40923201-G1</span></td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923201/cd2022">40923201</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923201.github.io/cd2022/content/index.html">40923201</a></td>
+</tr>
+<tr style="height: 18.375px;">
+<td style="width: 69.9062px; height: 18.375px;">40923205</td>
+<td style="width: 51px; height: 18.375px; text-align: center;"><a href="https://github.com/40923205/cd2022">40923205</a></td>
+<td style="width: 80px; height: 18.375px;"><a href="https://40923205.github.io/cd2022/content/index.html">40923205</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923208</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/nfu40923208/cd2022">nfu40923208</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://nfu40923208.github.io/cd2022/content/index.html">40923208</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923210</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923210/cd2022">40923210</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923210.github.io/cd2022/content/index.html">40923210</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923217</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923217/cd2022">40923217</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923217.github.io/cd2022/content/index.html">40923217</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923230</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923230/cd2022">40923230</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923230.github.io/cd2022/content/index.html">40923230</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923231</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923231/cd2022">40923231</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923231.github.io/cd2022/content/index.html">40923231</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923235</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923235/cd2022">40923235</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923235.github.io/cd2022/content/index.html">40923235</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;"><span style="background-color: #808000;">40823215<span>-G2</span></span></td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40823215/cd2022">40823215</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40823215.github.io/cd2022/content/index.html">40823215</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923203</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/youshin40923203/cd2022">youshin40923203</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://youshin40923203.github.io/cd2022/content/index.html">40923203</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923204</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923204/cd2022">40923204</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923204.github.io/cd2022/content/index.html">40923204</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923207</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923207/cd2022">40923207</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923207.github.io/cd2022/content/index.html">40923207</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923209</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/nfu40923209/cd2022">nfu40923209</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://nfu40923209.github.io/cd2022/content/index.html">40923209</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923213</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923213/cd2022">40923213</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923213.github.io/cd2022/content/index.html">40923213</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923220</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923220/cd2022">40923220</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923220.github.io/cd2022/content/index.html">40923220</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923240</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923240/cd2022">40923240</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923240.github.io/cd2022/content/index.html">40923240</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;"><span style="background-color: #ff9900;">40923206<span>-G3</span></span></td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923206-1/cd2022">40923206-1</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923206-1.github.io/cd2022/content/index.html">40923206</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923224</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/s40923224/cd2022">s40923224</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://s40923224.github.io/cd2022/content/index.html">40923224</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923226</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923226/cd2022">40923226</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923226.github.io/cd2022/content/index.html">40923226</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923242</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923242/cd2022">40923242</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923242.github.io/cd2022/content/index.html">40923242</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923245</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923245-1/cd2022">40923245-1</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923245-1.github.io/cd2022/content/index.html">40923245</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923247</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923247/cd2022">40923247</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923247.github.io/cd2022/content/index.html">40923247</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923249</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923249-1/cd2022">40923249-1</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923249-1.github.io/cd2022/content/index.html">40923249</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923252</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923252/cd2022">40923252</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923252.github.io/cd2022/content/index.html">40923252</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;"><span style="background-color: #33cccc;">40623143<span>-G4</span></span></td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40623143/cd2022">40623143</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40623143.github.io/cd2022/content/index.html">40623143</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40723146</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40723146/cd2022">40723146</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40723146.github.io/cd2022/content/index.html">40723146</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923211</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/a40923211/cd2022">a40923211</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://a40923211.github.io/cd2022/content/index.html">40923211</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923218</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923218/cd2022">40923218</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923218.github.io/cd2022/content/index.html">40923218</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923221</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923221/cd2022">40923221</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923221.github.io/cd2022/content/index.html">40923221</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923223</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923223/cd2022">40923223</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923223.github.io/cd2022/content/index.html">40923223</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923227</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923227/cd2022">40923227</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923227.github.io/cd2022/content/index.html">40923227</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923238</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923238/cd2022">40923238</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923238.github.io/cd2022/content/index.html">40923238</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923243</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923243/cd2022">40923243</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923243.github.io/cd2022/content/index.html">40923243</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;"><span style="background-color: #3366ff;">40923212<span>-G5</span></span></td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923212/cd2022">40923212</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923212.github.io/cd2022/content/index.html">40923212</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923229</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923229/cd2022">40923229</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923229.github.io/cd2022/content/index.html">40923229</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923233</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923233/cd2022">40923233</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923233.github.io/cd2022/content/index.html">40923233</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923234</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923234/cd2022">40923234</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923234.github.io/cd2022/content/index.html">40923234</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923237</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923237/cd2022">40923237</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923237.github.io/cd2022/content/index.html">40923237</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923251</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923251/cd2022">40923251</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923251.github.io/cd2022/content/index.html">40923251</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923253</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923253/cd2022">40923253</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923253.github.io/cd2022/content/index.html">40923253</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40971220</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40971220/cd2022">40971220</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40971220.github.io/cd2022/content/index.html">40971220</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;"><span style="background-color: #ffcc00;">40723217<span>-G6</span></span></td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40723217/cd2022">40723217</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40723217.github.io/cd2022/content/index.html">40723217</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923219</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/nfu40923219/cd2022">nfu40923219</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://nfu40923219.github.io/cd2022/content/index.html">40923219</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923225</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923225/cd2022">40923225</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923225.github.io/cd2022/content/index.html">40923225</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923232</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923232/cd2022">40923232</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923232.github.io/cd2022/content/index.html">40923232</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923236</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923236/cd2022">40923236</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923236.github.io/cd2022/content/index.html">40923236</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923241</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923241/cd2022">40923241</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923241.github.io/cd2022/content/index.html">40923241</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923246</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923246/cd2022">40923246</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923246.github.io/cd2022/content/index.html">40923246</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923250</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923250/cd2022">40923250</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923250.github.io/cd2022/content/index.html">40923250</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;"><span style="background-color: #99cc00;">40723134<span>-G7</span></span></td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40723134/cd2022">40723134</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40723134.github.io/cd2022/content/index.html">40723134</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40723136</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/s40723136/cd2022">s40723136</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://s40723136.github.io/cd2022/content/index.html">40723136</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40732331</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40732331/cd2022">40732331</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40732331.github.io/cd2022/content/index.html">40732331</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923214</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923214/cd2022">40923214</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923214.github.io/cd2022/content/index.html">40923214</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923216</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923216/cd2022">40923216</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923216.github.io/cd2022/content/index.html">40923216</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923228</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923228/cd2022">40923228</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923228.github.io/cd2022/content/index.html">40923228</a></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 69.9062px; height: 18px;">40923248</td>
+<td style="width: 51px; height: 18px; text-align: center;"><a href="https://github.com/40923248/cd2022">40923248</a></td>
+<td style="width: 80px; height: 18px;"><a href="https://40923248.github.io/cd2022/content/index.html">40923248</a></td>
+</tr>
+</tbody>
+</table><br />About << <a href='About.html'>Previous</a> <a href='W11.html'>Next</a> >> W11</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
